@@ -1,0 +1,80 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar-container {
+    background-color: black;
+    display: flex;
+    padding: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 28rem;
+}
+
+nav .fa {
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    cursor: pointer;
+    margin: 30px;
+    padding: 15px;
+}
+
+.nav-item:hover {
+    color: white;
+    background-color: rgb(212, 96, 96);
+}
+
+/* For Mobile & Tab Device  */
+
+@media screen and (max-width : 1250px) {
+
+    nav .fa {
+        display: block;
+        position: absolute;
+        left: 90%;
+        z-index: 999;
+        top: 3%;
+        font-size: 2rem;
+    }
+
+    .nav-box {
+        margin-top: 12rem;
+    }
+
+    .nav-menu {
+        display: block;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-menu.active {
+        transform: translateX(100%);
+        transition: 0.5s;
+        left: 0;
+    }
+
+
+    .nav-item {
+        display: block;
+        margin-bottom: 70px;
+    }
+}
